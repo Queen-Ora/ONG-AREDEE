@@ -5,14 +5,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Montserrat",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
@@ -63,7 +63,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family:'Montserrat', sans-serif;   
 }
 
 a {
@@ -84,7 +84,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* PHP Email Form Messages
@@ -249,7 +249,7 @@ h6 {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
-    font-family: var(--nav-font);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -368,7 +368,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -486,13 +486,13 @@ h6 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: var(--heading-font);
+  font-family:'Montserrat', sans-serif;
   color: var(--heading-color);
 }
 
 .footer .footer-A propos p {
   font-size: 14px;
-  font-family: var(--heading-font);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer .social-links a {
@@ -837,7 +837,7 @@ section,
   margin: 0;
   font-size: 56px;
   font-weight: 700;
-  font-family: var(--nav-font);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero h2 span {
@@ -1097,7 +1097,7 @@ section,
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--heading-font);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1137,7 +1137,7 @@ section,
   margin-bottom: 5px;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
+  font-family:  'Montserrat', sans-serif;
 }
 
 .Partenaires .Partenaires-filters li:hover,
@@ -1243,7 +1243,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   padding: 15px 0 0 0;
   margin: 0;
-  font-family: var(--heading-font);
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
