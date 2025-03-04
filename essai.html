@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigramme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .level {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .level div {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        .level div a {
+            color: white;
+            text-decoration: none;
+        }
+        .level div:hover {
+            background-color: #45a049;
+        }
+        .line {
+            border-top: 2px solid #4CAF50;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="org-chart">
+        <!-- Level 1 -->
+        <div class="level">
+            <div><a href="#">Assemblée Générale</a></div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Level 2 -->
+        <div class="level">
+            <div><a href="#">Commissaires aux comptes</a></div>
+            <div><a href="#">Conseil D’administration</a></div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Level 3 -->
+        <div class="level">
+            <div><a href="#">Direction Exécutive</a></div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Level 4 -->
+        <div class="level">
+            <div><a href="#">Chargé de Programmes</a></div>
+            <div><a href="#">Secrétaire Caissière</a></div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Level 5 -->
+        <div class="level">
+            <div><a href="#">Volet Promotion des Droits de l’Homme</a></div>
+            <div><a href="#">Volet Suivi/Evaluation</a></div>
+            <div><a href="#">Volet Education/Formation</a></div>
+            <div><a href="#">Volet AGR</a></div>
+            <div><a href="#">Volet École relais</a></div>
+        </div>
+    </div>
+</body>
+</html>
