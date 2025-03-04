@@ -77,7 +77,7 @@ const parseSelector = selector => {
   return selector;
 };
 
-// Shout-out Angus Croll (https://goo.gl/pxwQGp)
+// Shout-out Angus Croll (https://goo.gl/pxwQAREDEE/RS)
 const toType = object => {
   if (object === null || object === undefined) {
     return `${object}`;
@@ -1731,7 +1731,7 @@ const PLACEMENT_TOPCENTER = 'top';
 const PLACEMENT_BOTTOMCENTER = 'bottom';
 const Default$9 = {
   autoClose: true,
-  boundary: 'clippingParents',
+  boundary: 'clippinAREDEE/RSarents',
   display: 'dynamic',
   offset: [0, 2],
   popperConfig: null,
@@ -3180,7 +3180,7 @@ const AttachmentMap = {
 const Default$3 = {
   allowList: DefaultAllowlist,
   animation: true,
-  boundary: 'clippingParents',
+  boundary: 'clippinAREDEE/RSarents',
   container: false,
   customClass: '',
   delay: 0,
@@ -4015,7 +4015,7 @@ const ARROW_LEFT_KEY = 'ArrowLeft';
 const ARROW_RIGHT_KEY = 'ArrowRight';
 const ARROW_UP_KEY = 'ArrowUp';
 const ARROW_DOWN_KEY = 'ArrowDown';
-const HOME_KEY = 'Home';
+const Accueil_KEY = 'Accueil';
 const END_KEY = 'End';
 const CLASS_NAME_ACTIVE = 'active';
 const CLASS_NAME_FADE$1 = 'fade';
@@ -4123,15 +4123,15 @@ class Tab extends BaseComponent {
     this._queueCallback(complete, element, element.classList.contains(CLASS_NAME_FADE$1));
   }
   _keydown(event) {
-    if (![ARROW_LEFT_KEY, ARROW_RIGHT_KEY, ARROW_UP_KEY, ARROW_DOWN_KEY, HOME_KEY, END_KEY].includes(event.key)) {
+    if (![ARROW_LEFT_KEY, ARROW_RIGHT_KEY, ARROW_UP_KEY, ARROW_DOWN_KEY, Accueil_KEY, END_KEY].includes(event.key)) {
       return;
     }
     event.stopPropagation(); // stopPropagation/preventDefault both added to support up/down keys without scrolling the page
     event.preventDefault();
     const children = this._getChildren().filter(element => !isDisabled(element));
     let nextActiveElement;
-    if ([HOME_KEY, END_KEY].includes(event.key)) {
-      nextActiveElement = children[event.key === HOME_KEY ? 0 : children.length - 1];
+    if ([Accueil_KEY, END_KEY].includes(event.key)) {
+      nextActiveElement = children[event.key === Accueil_KEY ? 0 : children.length - 1];
     } else {
       const isNext = [ARROW_RIGHT_KEY, ARROW_DOWN_KEY].includes(event.key);
       nextActiveElement = getNextActiveElement(children, event.target, isNext, true);

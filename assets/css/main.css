@@ -1,6 +1,6 @@
 /**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+* Template Name: AREDEE/RS
+* Template URL: https://bootstrapmade.com/AREDEE/RS-free-multipurpose-html-bootstrap-template/
 * Updated: Aug 15 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -472,17 +472,17 @@ h6 {
   background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
 }
 
-.footer .footer-about .logo {
+.footer .footer-A propos .logo {
   line-height: 1;
   margin-bottom: 10px;
 }
 
-.footer .footer-about .logo img {
+.footer .footer-A propos .logo img {
   max-height: 40px;
   margin-right: 6px;
 }
 
-.footer .footer-about .logo span {
+.footer .footer-A propos .logo span {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -490,7 +490,7 @@ h6 {
   color: var(--heading-color);
 }
 
-.footer .footer-about p {
+.footer .footer-A propos p {
   font-size: 14px;
   font-family: var(--heading-font);
 }
@@ -558,7 +558,7 @@ h6 {
   color: var(--accent-color);
 }
 
-.footer .footer-contact p {
+.footer .footer-contacts p {
   margin-bottom: 5px;
 }
 
@@ -901,35 +901,35 @@ section,
 }
 
 /*--------------------------------------------------------------
-# About Section
+# A propos Section
 --------------------------------------------------------------*/
-.about .content h3 {
+.A propos .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-.about .content .fst-italic {
+.A propos .content .fst-italic {
   color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
 
-.about .content ul {
+.A propos .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.A propos .content ul li {
   padding: 10px 0 0 0;
   display: flex;
 }
 
-.about .content ul i {
+.A propos .content ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
-.about .content p:last-child {
+.A propos .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -1117,16 +1117,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Partenaires Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.Partenaires .Partenaires-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.Partenaires .Partenaires-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -1140,33 +1140,33 @@ section,
   font-family: var(--heading-font);
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.Partenaires .Partenaires-filters li:hover,
+.Partenaires .Partenaires-filters li.filter-active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.Partenaires .Partenaires-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.Partenaires .Partenaires-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .Partenaires .Partenaires-filters li {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
 }
 
-.portfolio .portfolio-item {
+.Partenaires .Partenaires-item {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.Partenaires .Partenaires-item .Partenaires-info {
   opacity: 0;
   position: absolute;
   left: 12px;
@@ -1178,21 +1178,21 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.Partenaires .Partenaires-item .Partenaires-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.Partenaires .Partenaires-item .Partenaires-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
+.Partenaires .Partenaires-item .Partenaires-info .preview-link,
+.Partenaires .Partenaires-item .Partenaires-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -1202,17 +1202,17 @@ section,
   line-height: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
+.Partenaires .Partenaires-item .Partenaires-info .preview-link:hover,
+.Partenaires .Partenaires-item .Partenaires-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.Partenaires .Partenaires-item .Partenaires-info .details-link {
   right: 14px;
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+.Partenaires .Partenaires-item:hover .Partenaires-info {
   opacity: 1;
   bottom: 0;
 }
@@ -1369,9 +1369,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# Equipe Section
 --------------------------------------------------------------*/
-.team .team-member {
+.Equipe .Equipe-member {
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
@@ -1379,12 +1379,12 @@ section,
   height: 100%;
 }
 
-.team .team-member .member-img {
+.Equipe .Equipe-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.team .team-member .social {
+.Equipe .Equipe-member .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -1394,7 +1394,7 @@ section,
   text-align: center;
 }
 
-.team .team-member .social a {
+.Equipe .Equipe-member .social a {
   background: color-mix(in srgb, var(--contrast-color), transparent 25%);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0 3px;
@@ -1407,46 +1407,46 @@ section,
   align-items: center;
 }
 
-.team .team-member .social a:hover {
+.Equipe .Equipe-member .social a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
 }
 
-.team .team-member .social i {
+.Equipe .Equipe-member .social i {
   font-size: 18px;
   line-height: 0;
 }
 
-.team .team-member .member-info {
+.Equipe .Equipe-member .member-info {
   padding: 25px 15px;
 }
 
-.team .team-member .member-info h4 {
+.Equipe .Equipe-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
 }
 
-.team .team-member .member-info span {
+.Equipe .Equipe-member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.team .team-member:hover .social {
+.Equipe .Equipe-member:hover .social {
   opacity: 1;
   bottom: 15px;
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# contacts Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contacts .info-item+.info-item {
   margin-top: 40px;
 }
 
-.contact .info-item i {
+.contacts .info-item i {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 20px;
@@ -1460,26 +1460,26 @@ section,
   margin-right: 15px;
 }
 
-.contact .info-item h3 {
+.contacts .info-item h3 {
   padding: 0;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.contact .info-item p {
+.contacts .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
 }
 
-.contact .php-email-form {
+.contacts .php-email-form {
   height: 100%;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contacts .php-email-form input[type=text],
+.contacts .php-email-form input[type=email],
+.contacts .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1489,19 +1489,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.contacts .php-email-form input[type=text]:focus,
+.contacts .php-email-form input[type=email]:focus,
+.contacts .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contacts .php-email-form input[type=text]::placeholder,
+.contacts .php-email-form input[type=email]::placeholder,
+.contacts .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contacts .php-email-form button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1510,40 +1510,40 @@ section,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contacts .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# Partenaires Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.Partenaires-details .Partenaires-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.Partenaires-details .Partenaires-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.Partenaires-details .Partenaires-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.Partenaires-details .Partenaires-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.Partenaires-details .Partenaires-info {
   background-color: var(--surface-color);
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.Partenaires-details .Partenaires-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1551,27 +1551,27 @@ section,
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.Partenaires-details .Partenaires-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.Partenaires-details .Partenaires-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.Partenaires-details .Partenaires-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.Partenaires-details .Partenaires-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.Partenaires-details .Partenaires-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }

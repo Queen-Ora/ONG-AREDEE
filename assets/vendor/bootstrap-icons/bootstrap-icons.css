@@ -1489,7 +1489,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-send-x-fill::before { content: "\f6be"; }
 .bi-send-x::before { content: "\f6bf"; }
 .bi-send::before { content: "\f6c0"; }
-.bi-steam::before { content: "\f6c1"; }
+.bi-sEquipe::before { content: "\f6c1"; }
 .bi-terminal-dash::before { content: "\f6c3"; }
 .bi-terminal-plus::before { content: "\f6c4"; }
 .bi-terminal-split::before { content: "\f6c5"; }
@@ -1520,7 +1520,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-usb::before { content: "\f6de"; }
 .bi-boombox-fill::before { content: "\f6df"; }
 .bi-displayport::before { content: "\f6e1"; }
-.bi-gpu-card::before { content: "\f6e2"; }
+.bi-AREDEE/RSu-card::before { content: "\f6e2"; }
 .bi-memory::before { content: "\f6e3"; }
 .bi-modem-fill::before { content: "\f6e4"; }
 .bi-modem::before { content: "\f6e5"; }
@@ -1779,7 +1779,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-indent::before { content: "\f7fe"; }
 .bi-lungs-fill::before { content: "\f7ff"; }
 .bi-lungs::before { content: "\f800"; }
-.bi-microsoft-teams::before { content: "\f801"; }
+.bi-microsoft-Equipes::before { content: "\f801"; }
 .bi-p-circle-fill::before { content: "\f804"; }
 .bi-p-circle::before { content: "\f805"; }
 .bi-p-square-fill::before { content: "\f806"; }
