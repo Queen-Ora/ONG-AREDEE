@@ -32,9 +32,9 @@
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-Documents-background-color: #ffffff; /* Used as the background color for Documents items that appear when hovering over primary navigation items */
+  --nav-Documents-color: #212529; /* Used for navigation links of the Documents items in the navigation menu. */
+  --nav-Documents-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to Documents navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -87,47 +87,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
 
 @keyframes php-email-form-loading {
   0% {
@@ -276,10 +236,10 @@ h6 {
     color: var(--nav-hover-color);
   }
 
-  .navmenu .dropdown ul {
+  .navmenu .Documents ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background: var(--nav-Documents-background-color);
     display: block;
     position: absolute;
     visibility: hidden;
@@ -292,40 +252,40 @@ h6 {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .navmenu .dropdown ul li {
+  .navmenu .Documents ul li {
     min-width: 200px;
   }
 
-  .navmenu .dropdown ul a {
+  .navmenu .Documents ul a {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--nav-dropdown-color);
+    color: var(--nav-Documents-color);
   }
 
-  .navmenu .dropdown ul a i {
+  .navmenu .Documents ul a i {
     font-size: 12px;
   }
 
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
-    background-color: var(--nav-dropdown-hover-color);
+  .navmenu .Documents ul a:hover,
+  .navmenu .Documents ul .active:hover,
+  .navmenu .Documents ul li:hover>a {
+    background-color: var(--nav-Documents-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .Documents:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
   }
 
-  .navmenu .dropdown .dropdown ul {
+  .navmenu .Documents .Documents ul {
     top: 0;
     left: -90%;
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .Documents .Documents:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -366,7 +326,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--nav-Documents-color);
     padding: 10px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
@@ -401,7 +361,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    background-color: var(--nav-dropdown-hover-color);
+    background-color: var(--nav-Documents-hover-color);
   }
 
   .navmenu .active i,
@@ -409,23 +369,23 @@ h6 {
     transform: rotate(180deg);
   }
 
-  .navmenu .dropdown ul {
+  .navmenu .Documents ul {
     position: static;
     display: none;
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
+    background-color: var(--nav-Documents-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     transition: all 0.5s ease-in-out;
   }
 
-  .navmenu .dropdown ul ul {
+  .navmenu .Documents ul ul {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .Documents>.Documents-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -627,7 +587,7 @@ h6 {
   z-index: 999999;
   overflow: hidden;
   background: #000;
-  transition: all 0.6s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 #preloader:before {
@@ -1054,7 +1014,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Call To Action Section
+# Prenez un rendez-vous Section
 --------------------------------------------------------------*/
 .call-to-action {
   padding: 80px 0;
@@ -1115,6 +1075,53 @@ section,
   color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .swiper-wrapper {
+  height: auto;
+}
+
+.gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.gallery .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery .swiper-slide-active {
+    background: var(--background-color);
+    border: 6px solid var(--accent-color);
+    padding: 4px;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: none;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Partenaires Section
