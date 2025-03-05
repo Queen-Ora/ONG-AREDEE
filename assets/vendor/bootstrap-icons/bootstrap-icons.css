@@ -1520,7 +1520,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-usb::before { content: "\f6de"; }
 .bi-boombox-fill::before { content: "\f6df"; }
 .bi-displayport::before { content: "\f6e1"; }
-.bi-AREDEE/RSu-card::before { content: "\f6e2"; }
+.bi-gpu-card::before { content: "\f6e2"; }
 .bi-memory::before { content: "\f6e3"; }
 .bi-modem-fill::before { content: "\f6e4"; }
 .bi-modem::before { content: "\f6e5"; }

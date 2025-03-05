@@ -100,7 +100,7 @@
     return selector;
   };
 
-  // Shout-out Angus Croll (https://goo.gl/pxwQAREDEE/RS)
+  // Shout-out Angus Croll (https://goo.gl/pxwQgp)
   const toType = object => {
     if (object === null || object === undefined) {
       return `${object}`;
@@ -1754,7 +1754,7 @@
   const PLACEMENT_BOTTOMCENTER = 'bottom';
   const Default$9 = {
     autoClose: true,
-    boundary: 'clippinAREDEE/RSarents',
+    boundary: 'clippingparents',
     display: 'dynamic',
     offset: [0, 2],
     popperConfig: null,
@@ -3203,7 +3203,7 @@
   const Default$3 = {
     allowList: DefaultAllowlist,
     animation: true,
-    boundary: 'clippinAREDEE/RSarents',
+    boundary: 'clippingparents',
     container: false,
     customClass: '',
     delay: 0,

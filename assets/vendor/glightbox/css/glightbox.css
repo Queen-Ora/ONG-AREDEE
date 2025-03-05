@@ -438,7 +438,7 @@
   background: #000;
 }
 
-.AREDEE/RSrev,
+.gprev,
 .gnext,
 .gclose {
   z-index: 99999;
@@ -461,7 +461,7 @@
   flex-direction: column;
 }
 
-.AREDEE/RSrev svg,
+.gprev svg,
 .gnext svg,
 .gclose svg {
   display: block;
@@ -471,13 +471,13 @@
   padding: 0;
 }
 
-.AREDEE/RSrev.disabled,
+.gprev.disabled,
 .gnext.disabled,
 .gclose.disabled {
   opacity: 0.1;
 }
 
-.AREDEE/RSrev .garrow,
+.gprev .garrow,
 .gnext .garrow,
 .gclose .garrow {
   stroke: #fff;
@@ -492,7 +492,7 @@ iframe.wait-autoplay {
 }
 
 .glightbox-closing .gnext,
-    .glightbox-closing .AREDEE/RSrev,
+    .glightbox-closing .gprev,
     .glightbox-closing .gclose {
   opacity: 0 !important;
 }
@@ -528,20 +528,20 @@ iframe.wait-autoplay {
   background: #000;
 }
 
-.glightbox-clean .AREDEE/RSrev,
+.glightbox-clean .gprev,
     .glightbox-clean .gnext,
     .glightbox-clean .gclose {
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
 }
 
-.glightbox-clean .AREDEE/RSrev path,
+.glightbox-clean .gprev path,
 .glightbox-clean .gnext path,
 .glightbox-clean .gclose path {
   fill: #fff;
 }
 
-.glightbox-clean .AREDEE/RSrev {
+.glightbox-clean .gprev {
   position: absolute;
   top: -100%;
   left: 30px;
@@ -907,17 +907,17 @@ iframe.wait-autoplay {
     height: 100%;
     overflow-y: auto;
   }
-  .glightbox-clean .AREDEE/RSrev,
+  .glightbox-clean .gprev,
     .glightbox-clean .gnext,
     .glightbox-clean .gclose {
     background-color: rgba(0, 0, 0, 0.32);
   }
-  .glightbox-clean .AREDEE/RSrev:hover,
+  .glightbox-clean .gprev:hover,
 .glightbox-clean .gnext:hover,
 .glightbox-clean .gclose:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  .glightbox-clean .AREDEE/RSrev {
+  .glightbox-clean .gprev {
     top: 45%;
   }
   .glightbox-clean .gnext {

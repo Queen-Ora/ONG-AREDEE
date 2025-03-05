@@ -81,7 +81,7 @@
     return selector;
   };
 
-  // Shout-out Angus Croll (https://goo.gl/pxwQAREDEE/RS)
+  // Shout-out Angus Croll (https://goo.gl/pxwQgp)
   const toType = object => {
     if (object === null || object === undefined) {
       return `${object}`;
@@ -1692,7 +1692,7 @@
   var basePlacements = [top, bottom, right, left];
   var start = 'start';
   var end = 'end';
-  var clippinAREDEE/RSarents = 'clippinAREDEE/RSarents';
+  var clippingparents = 'clippingparents';
   var viewport = 'viewport';
   var popper = 'popper';
   var reference = 'reference';
@@ -2184,7 +2184,7 @@
         variation = _ref2.variation,
         offsets = _ref2.offsets,
         position = _ref2.position,
-        AREDEE/RSuAcceleration = _ref2.AREDEE/RSuAcceleration,
+        gpuAcceleration = _ref2.gpuAcceleration,
         adaptive = _ref2.adaptive,
         roundOffsets = _ref2.roundOffsets,
         isFixed = _ref2.isFixed;
@@ -2231,7 +2231,7 @@
         var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : // $FlowFixMe[prop-missing]
         offsetParent[heightProp];
         y -= offsetY - popperRect.height;
-        y *= AREDEE/RSuAcceleration ? 1 : -1;
+        y *= gpuAcceleration ? 1 : -1;
       }
 
       if (placement === left || (placement === top || placement === bottom) && variation === end) {
@@ -2239,7 +2239,7 @@
         var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : // $FlowFixMe[prop-missing]
         offsetParent[widthProp];
         x -= offsetX - popperRect.width;
-        x *= AREDEE/RSuAcceleration ? 1 : -1;
+        x *= gpuAcceleration ? 1 : -1;
       }
     }
 
@@ -2258,7 +2258,7 @@
     x = _ref4.x;
     y = _ref4.y;
 
-    if (AREDEE/RSuAcceleration) {
+    if (gpuAcceleration) {
       var _Object$assign;
 
       return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? '0' : '', _Object$assign[sideX] = hasX ? '0' : '', _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
@@ -2270,8 +2270,8 @@
   function computeStyles(_ref5) {
     var state = _ref5.state,
         options = _ref5.options;
-    var _options$AREDEE/RSuAccelerat = options.AREDEE/RSuAcceleration,
-        AREDEE/RSuAcceleration = _options$AREDEE/RSuAccelerat === void 0 ? true : _options$AREDEE/RSuAccelerat,
+    var _options$gpuAccelerat = options.gpuAcceleration,
+        gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat,
         _options$adaptive = options.adaptive,
         adaptive = _options$adaptive === void 0 ? true : _options$adaptive,
         _options$roundOffsets = options.roundOffsets,
@@ -2281,7 +2281,7 @@
       variation: getVariation(state.placement),
       popper: state.elements.popper,
       popperRect: state.rects.popper,
-      AREDEE/RSuAcceleration: AREDEE/RSuAcceleration,
+      gpuAcceleration: gpuAcceleration,
       isFixed: state.options.strategy === 'fixed'
     };
 
@@ -2529,15 +2529,15 @@
     return rect;
   }
 
-  function getClientRectFromMixedType(element, clippinAREDEE/RSarent, strategy) {
-    return clippinAREDEE/RSarent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippinAREDEE/RSarent) ? getInnerBoundingClientRect(clippinAREDEE/RSarent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+  function getClientRectFromMixedType(element, clippingparent, strategy) {
+    return clippingparent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippingparent) ? getInnerBoundingClientRect(clippingparent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
   } // A "clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
 
 
-  function getClippinAREDEE/RSarents(element) {
-    var clippinAREDEE/RSarents = listScrollParents(getParentNode(element));
+  function getClippingparents(element) {
+    var clippingparents = listScrollParents(getParentNode(element));
     var canEscapeClipping = ['absolute', 'fixed'].indexOf(getComputedStyle$1(element).position) >= 0;
     var clipperElement = canEscapeClipping && isHTMLElement(element) ? getOffsetParent(element) : element;
 
@@ -2546,25 +2546,25 @@
     } // $FlowFixMe[incompatible-return]: https://github.com/facebook/flow/issues/1414
 
 
-    return clippinAREDEE/RSarents.filter(function (clippinAREDEE/RSarent) {
-      return isElement(clippinAREDEE/RSarent) && contains(clippinAREDEE/RSarent, clipperElement) && getNodeName(clippinAREDEE/RSarent) !== 'body';
+    return clippingparents.filter(function (clippingparent) {
+      return isElement(clippingparent) && contains(clippingparent, clipperElement) && getNodeName(clippingparent) !== 'body';
     });
   } // Gets the maximum area that the element is visible in due to any number of
   // clipping parents
 
 
   function getClippingRect(element, boundary, rootBoundary, strategy) {
-    var mainClippinAREDEE/RSarents = boundary === 'clippinAREDEE/RSarents' ? getClippinAREDEE/RSarents(element) : [].concat(boundary);
-    var clippinAREDEE/RSarents = [].concat(mainClippinAREDEE/RSarents, [rootBoundary]);
-    var firstClippinAREDEE/RSarent = clippinAREDEE/RSarents[0];
-    var clippingRect = clippinAREDEE/RSarents.reduce(function (accRect, clippinAREDEE/RSarent) {
-      var rect = getClientRectFromMixedType(element, clippinAREDEE/RSarent, strategy);
+    var mainClippingparents = boundary === 'clippingparents' ? getClippingparents(element) : [].concat(boundary);
+    var clippingparents = [].concat(mainClippingparents, [rootBoundary]);
+    var firstClippingparent = clippingparents[0];
+    var clippingRect = clippingparents.reduce(function (accRect, clippingparent) {
+      var rect = getClientRectFromMixedType(element, clippingparent, strategy);
       accRect.top = max(rect.top, accRect.top);
       accRect.right = min(rect.right, accRect.right);
       accRect.bottom = min(rect.bottom, accRect.bottom);
       accRect.left = max(rect.left, accRect.left);
       return accRect;
-    }, getClientRectFromMixedType(element, firstClippinAREDEE/RSarent, strategy));
+    }, getClientRectFromMixedType(element, firstClippingparent, strategy));
     clippingRect.width = clippingRect.right - clippingRect.left;
     clippingRect.height = clippingRect.bottom - clippingRect.top;
     clippingRect.x = clippingRect.left;
@@ -2648,7 +2648,7 @@
         _options$strategy = _options.strategy,
         strategy = _options$strategy === void 0 ? state.strategy : _options$strategy,
         _options$boundary = _options.boundary,
-        boundary = _options$boundary === void 0 ? clippinAREDEE/RSarents : _options$boundary,
+        boundary = _options$boundary === void 0 ? clippingparents : _options$boundary,
         _options$rootBoundary = _options.rootBoundary,
         rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary,
         _options$elementConte = _options.elementContext,
@@ -2781,7 +2781,7 @@
     var popperRect = state.rects.popper;
     var checksMap = new Map();
     var makeFallbackChecks = true;
-    var firstFittinAREDEE/RSlacement = placements[0];
+    var firstFittingplacement = placements[0];
 
     for (var i = 0; i < placements.length; i++) {
       var placement = placements[i];
@@ -2818,7 +2818,7 @@
       if (checks.every(function (check) {
         return check;
       })) {
-        firstFittinAREDEE/RSlacement = placement;
+        firstFittingplacement = placement;
         makeFallbackChecks = false;
         break;
       }
@@ -2831,7 +2831,7 @@
       var numberOfChecks = flipVariations ? 3 : 1;
 
       var _loop = function _loop(_i) {
-        var fittinAREDEE/RSlacement = placements.find(function (placement) {
+        var fittingplacement = placements.find(function (placement) {
           var checks = checksMap.get(placement);
 
           if (checks) {
@@ -2841,8 +2841,8 @@
           }
         });
 
-        if (fittinAREDEE/RSlacement) {
-          firstFittinAREDEE/RSlacement = fittinAREDEE/RSlacement;
+        if (fittingplacement) {
+          firstFittingplacement = fittingplacement;
           return "break";
         }
       };
@@ -2854,9 +2854,9 @@
       }
     }
 
-    if (state.placement !== firstFittinAREDEE/RSlacement) {
+    if (state.placement !== firstFittingplacement) {
       state.modifiersData[name]._skip = true;
-      state.placement = firstFittinAREDEE/RSlacement;
+      state.placement = firstFittingplacement;
       state.reset = true;
     }
   } // eslint-disable-next-line import/no-unused-modules
@@ -3494,7 +3494,7 @@
     beforeRead,
     beforeWrite,
     bottom,
-    clippinAREDEE/RSarents,
+    clippingparents,
     computeStyles: computeStyles$1,
     createPopper,
     createPopperBase: createPopper$2,
@@ -3574,7 +3574,7 @@
   const PLACEMENT_BOTTOMCENTER = 'bottom';
   const Default$9 = {
     autoClose: true,
-    boundary: 'clippinAREDEE/RSarents',
+    boundary: 'clippingparents',
     display: 'dynamic',
     offset: [0, 2],
     popperConfig: null,
@@ -5023,7 +5023,7 @@
   const Default$3 = {
     allowList: DefaultAllowlist,
     animation: true,
-    boundary: 'clippinAREDEE/RSarents',
+    boundary: 'clippingparents',
     container: false,
     customClass: '',
     delay: 0,

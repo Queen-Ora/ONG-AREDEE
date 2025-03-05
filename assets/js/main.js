@@ -1,6 +1,6 @@
 /**
-* Template Name: AREDEE/RS
-* Template URL: https://bootstrapmade.com/AREDEE/RS-free-multipurpose-html-bootstrap-template/
+* Template Name: gp
+* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Updated: Aug 15 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -207,5 +207,19 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  // function initSwiper() {
+  //   document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+  //     let config = JSON.parse(
+  //       swiperElement.querySelector(".swiper-config").innerHTML.trim()
+  //     );
+
+  //     if (swiperElement.classList.contains("swiper-tab")) {
+  //       initSwiperWithCustomPagination(swiperElement, config);
+  //     } else {
+  //       new Swiper(swiperElement, config);
+  //     }
+  //   });
+  // }
 
 })();

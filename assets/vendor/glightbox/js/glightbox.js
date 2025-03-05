@@ -1064,10 +1064,10 @@
     return;
   }
 
-  var SlideConfiAREDEE/RSarser = function () {
-    function SlideConfiAREDEE/RSarser() {
+  var SlideConfigparser = function () {
+    function SlideConfigparser() {
       var slideParamas = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      _classCallCheck(this, SlideConfiAREDEE/RSarser);
+      _classCallCheck(this, SlideConfigparser);
       this.defaults = {
         href: '',
         sizes: '',
@@ -1089,7 +1089,7 @@
         this.defaults = extend(this.defaults, slideParamas);
       }
     }
-    return _createClass(SlideConfiAREDEE/RSarser, [{
+    return _createClass(SlideConfigparser, [{
       key: "sourceType",
       value: function sourceType(url) {
         var origin = url;
@@ -1442,7 +1442,7 @@
         if (!isNode(this.element) && !this.element.hasOwnProperty('draggable')) {
           this.element.draggable = this.instance.settings.draggable;
         }
-        var parser = new SlideConfiAREDEE/RSarser(this.instance.settings.slideExtraAttributes);
+        var parser = new SlideConfigparser(this.instance.settings.slideExtraAttributes);
         this.slideConfig = parser.parseConfig(this.element, this.instance.settings);
         return this.slideConfig;
       }
@@ -2133,7 +2133,7 @@
     }
   };
   defaults.slideHTML = "<div class=\"gslide\">\n    <div class=\"gslide-inner-content\">\n        <div class=\"ginner-container\">\n            <div class=\"gslide-media\">\n            </div>\n            <div class=\"gslide-description\">\n                <div class=\"gdesc-inner\">\n                    <h4 class=\"gslide-title\"></h4>\n                    <div class=\"gslide-desc\"></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
-  defaults.lightboxHTML = "<div id=\"glightbox-body\" class=\"glightbox-container\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"false\">\n    <div class=\"gloader visible\"></div>\n    <div class=\"goverlay\"></div>\n    <div class=\"gcontainer\">\n    <div id=\"glightbox-slider\" class=\"gslider\"></div>\n    <button class=\"gclose gbtn\" aria-label=\"Close\" data-taborder=\"3\">{closeSVG}</button>\n    <button class=\"AREDEE/RSrev gbtn\" aria-label=\"Previous\" data-taborder=\"2\">{prevSVG}</button>\n    <button class=\"gnext gbtn\" aria-label=\"Next\" data-taborder=\"1\">{nextSVG}</button>\n</div>\n</div>";
+  defaults.lightboxHTML = "<div id=\"glightbox-body\" class=\"glightbox-container\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"false\">\n    <div class=\"gloader visible\"></div>\n    <div class=\"goverlay\"></div>\n    <div class=\"gcontainer\">\n    <div id=\"glightbox-slider\" class=\"gslider\"></div>\n    <button class=\"gclose gbtn\" aria-label=\"Close\" data-taborder=\"3\">{closeSVG}</button>\n    <button class=\"gprev gbtn\" aria-label=\"Previous\" data-taborder=\"2\">{prevSVG}</button>\n    <button class=\"gnext gbtn\" aria-label=\"Next\" data-taborder=\"1\">{nextSVG}</button>\n</div>\n</div>";
   var GlightboxInit = function () {
     function GlightboxInit() {
       var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -2778,7 +2778,7 @@
         var modal = document.getElementById('glightbox-body');
         this.modal = modal;
         var closeButton = modal.querySelector('.gclose');
-        this.prevButton = modal.querySelector('.AREDEE/RSrev');
+        this.prevButton = modal.querySelector('.gprev');
         this.nextButton = modal.querySelector('.gnext');
         this.overlay = modal.querySelector('.goverlay');
         this.loader = modal.querySelector('.gloader');
@@ -2821,7 +2821,7 @@
             onElement: modal,
             withCallback: function withCallback(e, target) {
               if (!_this7.preventOutsideClick && !hasClass(document.body, 'glightbox-mobile') && !closest(e.target, '.ginner-container')) {
-                if (!closest(e.target, '.gbtn') && !hasClass(e.target, 'gnext') && !hasClass(e.target, 'AREDEE/RSrev')) {
+                if (!closest(e.target, '.gbtn') && !hasClass(e.target, 'gnext') && !hasClass(e.target, 'gprev')) {
                   _this7.close();
                 }
               }
