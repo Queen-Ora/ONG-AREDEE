@@ -25,12 +25,12 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/team/aredee logo.jpg" alt=""> 
+        <img src="assets/img/team/aredee logo.jpg" alt="">
         <h1 class="sitename">AREDEE/RS</h1>
         <span></span>
       </a>
 
-     
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Accueil<br></a></li>
@@ -42,7 +42,7 @@
                 class="bi bi-chevron-down toggle-Documents"></i></a>
             <ul>
               <li><a href="./document1.html">Formulaire de declaration d'incident</a></li>
-             
+
               <li><a href="./document2.html">Statuts</a></li>
               <li><a href="./document3.html">Manuel de Procedure</a></li>
               <li><a href="./organigramme.html">organigramme</a></li>
@@ -118,38 +118,90 @@
 
     <!-- A propos Section -->
     <section id="A propos" class="A propos section">
+      <link rel="stylesheet" href="assets/css/about.css">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/A propos.jpg" class="img-fluid" alt="">
+            <img src="/assets/img/team/DSC01234.JPG" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>	Notre identité et notre affirmation</h3>
+            <h3> Notre identité et notre affirmation</h3>
             <p class="fst-italic">
-              L’Agence Régionale pour l’Elimination de toutes les formes de Discrimination à l’Egard des enfants dans la Région des Savanes en abrégé (AREDEE/RS) est une association de développement loi 1901, née le 10 novembre 2000 à Dapaong. Elle est enregistrée sous le n°0847/MISD-SG-DAPSC-DSC du Ministère de l’Intérieur de la Sécurité de la Décentralisation en date du 26 avril 2004 à Lomé, inséré dans le supplément au journal officiel de la République togolaise N°14 bis du 1ER MAI 2004. Son siège social est fixé à Dapaong, chef -lieu de la Région des Savanes.
+              L’Agence Régionale pour l’Elimination de toutes les formes de Discrimination à l’Egard des enfants dans la
+              Région des Savanes en abrégé (AREDEE/RS) est une association de développement loi 1901, née le 10 novembre
+              2000 à Dapaong. Elle est enregistrée sous le n°0847/MISD-SG-DAPSC-DSC du Ministère de l’Intérieur de la
+              Sécurité de la Décentralisation en date du 26 avril 2004 à Lomé, inséré dans le supplément au journal
+              officiel de la République togolaise N°14 bis du 1ER MAI 2004. Son siège social est fixé à Dapaong, chef
+              -lieu de la Région des Savanes.
             </p>
-            <ul>
-              <li><a href=""><i class="bi bi-check2-all"></i> <span>Notre Mission</span></a></li>
-              <li><a href=""><i class="bi bi-check2-all"></i> <span>Notre Vision</span></a></li>
-              <li><a href=""><i class="bi bi-check2-all"></i> <span>Notre Objectif</span></a></li>
-              <li><a href=""><i class="bi bi-check2-all"></i> <span>Notre Valeur</span></a></li>
-            </ul>
-            <p>
-              AREDEE/RS considère que toute forme de violence sur les enfants est inadmissible. Lutter et prévenir de tels  abus physiques, sexuels ou psychologiques, les discriminations et les stéréotypes fondés sur le sexe et l’inégale répartition du pouvoir entre les hommes et les femmes, les filles et les garçons n’est possible que si une politique sur l’égalité des sexes et des processus clairs sont résolument mises en œuvre au sein de l’organisation.
-            </p>
+            <section class="accordion"></section>
+
+
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">Mission <i>▼</i></div>
+              <div class="accordion-content">La mission d’AREDEE/RS est d’œuvrer pour l’amélioration des conditions de
+                vie éducative, sociale, économique, sanitaire et culturelle des enfants avec un accent particulier pour
+                la protection de leurs Droits.</div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">Vision <i>▼</i></div>
+              <div class="accordion-content">La vision de l’AREDEE/RS est de donner la priorité aux enfants et
+                promouvoir un environnement respectueux de l’enfance, les considérer comme titulaire de droits et des
+                acteurs sociaux.</div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">Nos Valeurs<i>▼</i></div>
+              <div class="accordion-content">Pour AREDEE/RS, le respect des droits de l’homme est une valeur
+                fondamentale qui est au centre de ses projets/programmes de développement. En effet, les filles, les
+                femmes et les personnes handicapées sont souvent victimes d’injustices sociales en zones urbaines comme
+                rurales. C’est pourquoi, AREDEE/RS appuie et élabore, sur la base de leurs besoins, des
+                projets/programmes en mettant l’accent sur l’équité, la non-discrimination et la participation active et
+                inclusive..</div>
+
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">Nos Spécificités <i>▼</i></div>
+              <div class="accordion-content">L’organisation œuvre particulièrement dans la promotion des droits de
+                l’enfant, la lutte contre la traite des personnes, le monitoring, observation des droits humains et la
+                gouvernance participative..</div>
+            </div>
+
+
+            <script>
+              function toggleAccordion(element) {
+                let parent = element.parentElement;
+                let allItems = document.querySelectorAll('.accordion-item');
+                allItems.forEach(item => {
+                  if (item !== parent) {
+                    item.classList.remove('open');
+                  }
+                });
+                parent.classList.toggle('open');
+              }
+            </script>
+
+
+
+            <!-- <p>
+              AREDEE/RS considère que toute forme de violence sur les enfants est inadmissible. Lutter et prévenir de
+              tels abus physiques, sexuels ou psychologiques, les discriminations et les stéréotypes fondés sur le sexe
+              et l’inégale répartition du pouvoir entre les hommes et les femmes, les filles et les garçons n’est
+              possible que si une politique sur l’égalité des sexes et des processus clairs sont résolument mises en
+              œuvre au sein de l’organisation.
+            </p> -->
           </div>
-        
+
         </div>
-        
+
 
       </div>
 
     </section><!-- /A propos Section -->
 
     <!-- Clients Section -->
-   
+
     <!-- /Clients Section -->
 
     <!-- Features Section -->
@@ -158,52 +210,54 @@
       <div class="container">
 
         <div class="text-center">
-            <h3>Nos Actions</h3>
-            <p>Découvrez quelques-unes des actions que nous avons mises en place.</p>
+          <h3>Nos Actions</h3>
+          <p>Découvrez quelques-unes des actions que nous avons mises en place.</p>
         </div>
-        
+
 
         <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/annie-spratt-cVEOh_JJmEE-unsplash.jpg" alt=""></div>
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img
+              src="assets/img/annie-spratt-cVEOh_JJmEE-unsplash.jpg" alt=""></div>
           <div class="col-lg-6">
 
             <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-person-check flex-shrink-0"></i>
+              <i class="bi bi-person-check flex-shrink-0"></i>
 
-                <div>
-                    <h4>Récupération des Enfants Victimes de Traite</h4>
-                    <p>300 enfants victimes de traite ont été récupérés et réinsérés avec succès dans des programmes de protection.</p>
-                </div>
+              <div>
+                <h4>Récupération des Enfants Victimes de Traite</h4>
+                <p>300 enfants victimes de traite ont été récupérés et réinsérés avec succès dans des programmes de
+                  protection.</p>
+              </div>
             </div>
-            
-
-           <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-    <i class="bi bi-house-door flex-shrink-0"></i>
-    <div>
-        <h4>Réintégration en Famille</h4>
-        <p>La réintégration en famille de +153 enfants.</p>
-    </div>
-</div><!-- End Features Item-->
 
 
-<div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-    <i class="bi bi-briefcase flex-shrink-0"></i>
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-house-door flex-shrink-0"></i>
+              <div>
+                <h4>Réintégration en Famille</h4>
+                <p>La réintégration en famille de +153 enfants.</p>
+              </div>
+            </div><!-- End Features Item-->
 
-    <div>
-        <h4>Mise en Apprentissages</h4>
-        <p>La mise en apprentissage de +73 enfants dans divers domaines professionnels.</p>
-    </div>
-</div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-briefcase flex-shrink-0"></i>
+
+              <div>
+                <h4>Mise en Apprentissages</h4>
+                <p>La mise en apprentissage de +73 enfants dans divers domaines professionnels.</p>
+              </div>
+            </div><!-- End Features Item-->
 
 
-<div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-    <i class="bi bi-book flex-shrink-0"></i>
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-book flex-shrink-0"></i>
 
-    <div>
-        <h4>Création de l'École Relais</h4>
-        <p>La création de l’École Relais au centre de Koukdagou, offrant un cadre d'apprentissage adapté.</p>
-    </div>
-</div><!-- End Features Item-->
+              <div>
+                <h4>Création de l'École Relais</h4>
+                <p>La création de l’École Relais au centre de Koukdagou, offrant un cadre d'apprentissage adapté.</p>
+              </div>
+            </div><!-- End Features Item-->
 
           </div>
         </div>
@@ -218,7 +272,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>jettez un coup d'oeil à nos  Services</p>
+        <p>jettez un coup d'oeil à nos Services</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -234,11 +288,11 @@
                 <h3> Plaidoyer et Sensibilisation</h3>
               </a>
               <p>
-                <ul>
-                  <li>Plaidoyer pour la protection des enfants</li>
-                  <li>Sensibilisation des populations sur les droits des enfants</li>
-                  <li>Formation des acteurs locaux sur les droits des enfants</li>
-                </ul>
+              <ul>
+                <li>Plaidoyer pour la protection des enfants</li>
+                <li>Sensibilisation des populations sur les droits des enfants</li>
+                <li>Formation des acteurs locaux sur les droits des enfants</li>
+              </ul>
               </p>
             </div>
           </div><!-- End Service Item -->
@@ -252,13 +306,13 @@
                 <h3>Protection et Réintégration des Enfants</h3>
               </a>
               <p>
-                <ul>
-                  <li>-Sauvetage et accompagnement des enfants victimes de traite et exploitation
-                    </li>
-                  <li>Réintégration familiale des enfants en situation de vulnérabilité
-                   </li>
-                  <li> Soutien aux orphelins et enfants affectés par le VIH/SIDA</li>
-                </ul>
+              <ul>
+                <li>-Sauvetage et accompagnement des enfants victimes de traite et exploitation
+                </li>
+                <li>Réintégration familiale des enfants en situation de vulnérabilité
+                </li>
+                <li> Soutien aux orphelins et enfants affectés par le VIH/SIDA</li>
+              </ul>
               </p>
             </div>
           </div><!-- End Service Item -->
@@ -272,11 +326,11 @@
                 <h3>Éducation et Formation</h3>
               </a>
               <p>
-                <ul>
-                  <li>Prise en charge scolaire des enfants vulnérables</li>
-                  <li>Formation professionnelle des jeunes</li>
-                  <li>Renforcement des capacités des enseignants et des parents</li>
-                </ul>
+              <ul>
+                <li>Prise en charge scolaire des enfants vulnérables</li>
+                <li>Formation professionnelle des jeunes</li>
+                <li>Renforcement des capacités des enseignants et des parents</li>
+              </ul>
               </p>
             </div>
           </div><!-- End Service Item -->
@@ -290,14 +344,14 @@
                 <h3>Soutien Psychosocial et Juridique</h3>
               </a>
               <p>
-                <ul>
-                  <li>Formation des familles sur les bonnes pratiques éducatives</li>
-                  <li>Accompagnement psychologique des enfants victimes de traumatismes
-                    </li>
-                  <li>
-                    Aide juridique et médiation pour la protection des enfants vulnérables
-                    </li>
-                </ul>
+              <ul>
+                <li>Formation des familles sur les bonnes pratiques éducatives</li>
+                <li>Accompagnement psychologique des enfants victimes de traumatismes
+                </li>
+                <li>
+                  Aide juridique et médiation pour la protection des enfants vulnérables
+                </li>
+              </ul>
               </p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
@@ -312,11 +366,11 @@
                 <h3>Engagement Communautaire</h3>
               </a>
               <p>
-                <ul>
-                  <li>Renforcement de l’engagement communautaire des enfants</li>
-                  <li>Formation des agents de sécurité et de réadaptation</li>
-                  <li>Prise en charge des enfants victimes de maltraitance ou d’exploitation</li>
-                </ul>
+              <ul>
+                <li>Renforcement de l’engagement communautaire des enfants</li>
+                <li>Formation des agents de sécurité et de réadaptation</li>
+                <li>Prise en charge des enfants victimes de maltraitance ou d’exploitation</li>
+              </ul>
               </p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
@@ -331,11 +385,11 @@
                 <h3>Assistance Sociale et Sanitaire</h3>
               </a>
               <p>
-                <ul>
-                  <li>Assistance sociale et sanitaire des enfants vulnérables</li>
-                  <li>Prise en charge des enfants victimes de maltraitance ou d’exploitation</li>
-                  <li>Renforcement des capacités des enseignants et des parents</li>
-                </ul>
+              <ul>
+                <li>Assistance sociale et sanitaire des enfants vulnérables</li>
+                <li>Prise en charge des enfants victimes de maltraitance ou d’exploitation</li>
+                <li>Renforcement des capacités des enseignants et des parents</li>
+              </ul>
               </p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
@@ -357,7 +411,8 @@
           <div class="col-xl-10">
             <div class="text-center">
               <h3>Prenez un rendez-vous</h3>
-              <p>Vous souhaitez signaler un cas ou avez une demande particulière ? Prenez rendez-vous avec notre équipe.</p>
+              <p>Vous souhaitez signaler un cas ou avez une demande particulière ? Prenez rendez-vous avec notre équipe.
+              </p>
               <a class="cta-btn" href="#">Prenez un rendez-vous</a>
             </div>
           </div>
@@ -377,12 +432,12 @@
 
       <div class="container">
 
- <section id="clients" class="clients section">
+        <section id="clients" class="clients section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-           <script type="application/json" class="swiper-config">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -415,24 +470,25 @@
               }
             }
            </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/images (1).png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/327161867_8894207917286168_8230885556691306255_n.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/foddet.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/iday.jpeg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/OIP.jpeg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/unicef.png" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/FODES.jpg" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/AMNESY.png" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/cnsc.jpg" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/HCDH.png" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/RESAEV.png" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/unicef.png" class="img-fluid" alt=""></div>            
-            <div class="swiper-slide"><img src="assets/img/HCDH.png" class="img-fluid" alt=""></div>            
-          </div>
-        </div>
-<hr>
-        <!-- <div class="swiper init-swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/images (1).png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/327161867_8894207917286168_8230885556691306255_n.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/foddet.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/iday.jpeg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/OIP.jpeg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/unicef.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/FODES.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/AMNESY.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/cnsc.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/HCDH.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/RESAEV.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/unicef.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/HCDH.png" class="img-fluid" alt=""></div>
+              </div>
+            </div>
+            <hr>
+            <!-- <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
              {
                "loop": true,
@@ -479,9 +535,9 @@
            </div>
          </div> -->
 
-      </div>
+          </div>
 
-    </section>
+        </section>
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
@@ -506,7 +562,8 @@
 
             <h3 class="fw-bold fs-2 mb-3">+ de 20 ans d'experiences</h3>
             <p>
-Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au service de la Region des savanes            </p>
+              Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au service de la Region des
+              savanes </p>
 
             <div class="row gy-4">
 
@@ -514,7 +571,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="+732" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="+732" data-purecounter-duration="1"
+                      class="purecounter"></span>
                     <p><strong>Bénéficiaires</strong> <span></span></p>
                   </div>
                 </div>
@@ -524,7 +582,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="+1521" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="+1521" data-purecounter-duration="1"
+                      class="purecounter"></span>
                     <p><strong>projets </strong> <span>éffectués</span></p>
                   </div>
                 </div>
@@ -534,7 +593,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <div class="stats-item d-flex">
                   <i class="bi bi-heart flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="+1453" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="+1453" data-purecounter-duration="1"
+                      class="purecounter"></span>
                     <p><strong>Coeurs </strong> <span>touchés</span></p>
                   </div>
                 </div>
@@ -544,7 +604,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="+432" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="+432" data-purecounter-duration="1"
+                      class="purecounter"></span>
                     <p><strong>actions</strong> <span></span></p>
                   </div>
                 </div>
@@ -590,11 +651,14 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Douti Bambè</h3>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Je suis profondément reconnaissante à AREDEE/RS. Grâce à leur aide, mon enfant, qui avait été victime de traite, a été . Aujourd’hui, il fréquente l’école, et je vois chaque jour la différence qu’ils ont faite pour nous.</span>
+                  <span>Je suis profondément reconnaissante à AREDEE/RS. Grâce à leur aide, mon enfant, qui avait été
+                    victime de traite, a été . Aujourd’hui, il fréquente l’école, et je vois chaque jour la différence
+                    qu’ils ont faite pour nous.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -620,13 +684,15 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Lare Mimbouab</h3>
-                
+
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span> AREDEE/RS a transformé notre vie. Grâce à eux, mon enfant a pu accéder à une éducation de qualité et retrouver un environnement sûr et chaleureux.</span>
+                  <span> AREDEE/RS a transformé notre vie. Grâce à eux, mon enfant a pu accéder à une éducation de
+                    qualité et retrouver un environnement sûr et chaleureux.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -638,11 +704,14 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 <h3>Kombate Yendouban</h3>
                 <h4></h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Je remercie du fond du cœur AREDEE/RS. Leur engagement concret, avec la création de l’École Relais à Koukdagou et 15 clubs scolaires dans 16 villages frontaliers, a permis à mon enfant de bénéficier d’un soutien essentiel et de grandir dans un cadre protégé.</span>
+                  <span>Je remercie du fond du cœur AREDEE/RS. Leur engagement concret, avec la création de l’École
+                    Relais à Koukdagou et 15 clubs scolaires dans 16 villages frontaliers, a permis à mon enfant de
+                    bénéficier d’un soutien essentiel et de grandir dans un cadre protégé.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -651,14 +720,17 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Koffitse  </h3>
+                <h3>John Koffitse </h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span> Avant l’intervention d’AREDEE/RS, je ne voyais plus d’avenir pour mon enfant. Grâce à leur action concrète, parmi les 153 enfants réintégrés, mon petit a retrouvé le sourire et l’espoir. Leur soutien m’a permis de croire à un avenir meilleur.</span>
+                  <span> Avant l’intervention d’AREDEE/RS, je ne voyais plus d’avenir pour mon enfant. Grâce à leur
+                    action concrète, parmi les 153 enfants réintégrés, mon petit a retrouvé le sourire et l’espoir. Leur
+                    soutien m’a permis de croire à un avenir meilleur.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -672,19 +744,19 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
 
     </section><!-- /Testimonials Section -->
 
-      <!-- Gallery Section -->
-      <section id="gallery" class="gallery section">
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Galerie</h2>
-          <p>visitez notre galerie</p>
-        </div><!-- End Section Title -->
-  
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galerie</h2>
+        <p>visitez notre galerie</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
               {  
                 "loop": true,
                 "speed": 600,
@@ -714,29 +786,49 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
                 }
               }
             </script>
-            <div class="swiper-wrapper align-items-center">
-  
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01238.JPG"><img src="assets/img/team/DSC01238.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01241.JPG"><img src="assets/img/team/DSC01241.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01234.JPG"><img src="assets/img/team/DSC01234.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01280.JPG"><img src="assets/img/team/DSC01280.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01239.JPG"><img src="assets/img/team/DSC01239.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01244.JPG"><img src="assets/img/team/DSC01244.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01250.JPG"><img src="assets/img/team/DSC01250.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01260.JPG"><img src="assets/img/team/DSC01260.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01266.JPG"><img src="assets/img/team/DSC01266.JPG" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/team/DSC01304.JPG"><img src="assets/img/team/DSC01304.JPG" class="img-fluid" alt=""></a></div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-  
-        </div>
-  
-      </section><!-- /Gallery Section -->>
+          <div class="swiper-wrapper align-items-center">
 
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01238.JPG"><img src="assets/img/team/DSC01238.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01241.JPG"><img src="assets/img/team/DSC01241.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01234.JPG"><img src="assets/img/team/DSC01234.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01280.JPG"><img src="assets/img/team/DSC01280.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01239.JPG"><img src="assets/img/team/DSC01239.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01244.JPG"><img src="assets/img/team/DSC01244.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01250.JPG"><img src="assets/img/team/DSC01250.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01260.JPG"><img src="assets/img/team/DSC01260.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01266.JPG"><img src="assets/img/team/DSC01266.JPG" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01304.JPG"><img src="assets/img/team/DSC01304.JPG" class="img-fluid"
+                  alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
+
+    </section><!-- /Gallery Section -->>
+
+    </div>
+
+    </div>
 
     </section><!-- /Equipe Section -->
 
@@ -752,7 +844,9 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -785,7 +879,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contacts.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contacts.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -873,7 +968,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
             <h4>Notre Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news A propos our products and services!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="S'inscrire"></div>
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="S'inscrire">
+              </div>
               <div class="loading">En cours</div>
               <div class="error-message"></div>
               <div class="sent-message">Votre demande de souscription à été bien envoyé!</div>
@@ -886,13 +982,14 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">AREDEE/RS</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">AREDEE/RS</strong> <span>All Rights Reserved</span>
+        </p>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contacts form: [buy-url] -->
-          Designed by <a href="">Nadège-Sephora KAMOUGUE</a> 
+          Designed by <a href="">Nadège-Sephora KAMOUGUE</a>
         </div>
       </div>
     </div>
@@ -900,7 +997,8 @@ Plus de 20 ans au services des enfants, des vulnerables, des neccessiteux...au s
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
