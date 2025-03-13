@@ -520,6 +520,7 @@ h6 {
 
 .footer .footer-contacts p {
   margin-bottom: 5px;
+ 
 }
 
 .footer .footer-newsletter .newsletter-form {
@@ -778,6 +779,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  
 }
 
 .hero:before {
@@ -900,6 +902,7 @@ section,
   /* opacity: 0.5; */
   transition: 0.3s;
   /* filter: grayscale(100); */
+ 
 }
 
 .clients .swiper-slide img:hover {
@@ -943,6 +946,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+ 
 }
 
 .features .features-item h4 {
@@ -1449,8 +1453,11 @@ section,
 /*--------------------------------------------------------------
 # contacts Section
 --------------------------------------------------------------*/
+
+
 .contacts .info-item+.info-item {
   margin-top: 40px;
+
 }
 
 .contacts .info-item i {

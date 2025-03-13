@@ -136,51 +136,56 @@
               officiel de la République togolaise N°14 bis du 1ER MAI 2004. Son siège social est fixé à Dapaong, chef
               -lieu de la Région des Savanes.
             </p>
-            <section class="accordion"></section>
+            <section class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Mission <i>▼</i></div>
+                <div class="accordion-content">La mission d’AREDEE/RS est d’œuvrer pour l’amélioration des conditions de
+                  vie éducative, sociale, économique, sanitaire et culturelle des enfants avec un accent particulier
+                  pour
+                  la protection de leurs Droits.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Vision <i>▼</i></div>
+                <div class="accordion-content">La vision de l’AREDEE/RS est de donner la priorité aux enfants et
+                  promouvoir un environnement respectueux de l’enfance, les considérer comme titulaire de droits et des
+                  acteurs sociaux.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Nos Valeurs<i>▼</i></div>
+                <div class="accordion-content">Pour AREDEE/RS, le respect des droits de l’homme est une valeur
+                  fondamentale qui est au centre de ses projets/programmes de développement. En effet, les filles, les
+                  femmes et les personnes handicapées sont souvent victimes d’injustices sociales en zones urbaines
+                  comme
+                  rurales. C’est pourquoi, AREDEE/RS appuie et élabore, sur la base de leurs besoins, des
+                  projets/programmes en mettant l’accent sur l’équité, la non-discrimination et la participation active
+                  et
+                  inclusive..</div>
+
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Nos Spécificités <i>▼</i></div>
+                <div class="accordion-content">L’organisation œuvre particulièrement dans la promotion des droits de
+                  l’enfant, la lutte contre la traite des personnes, le monitoring, observation des droits humains et la
+                  gouvernance participative..</div>
+              </div>
 
 
-            <div class="accordion-item">
-              <div class="accordion-header" onclick="toggleAccordion(this)">Mission <i>▼</i></div>
-              <div class="accordion-content">La mission d’AREDEE/RS est d’œuvrer pour l’amélioration des conditions de
-                vie éducative, sociale, économique, sanitaire et culturelle des enfants avec un accent particulier pour
-                la protection de leurs Droits.</div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-header" onclick="toggleAccordion(this)">Vision <i>▼</i></div>
-              <div class="accordion-content">La vision de l’AREDEE/RS est de donner la priorité aux enfants et
-                promouvoir un environnement respectueux de l’enfance, les considérer comme titulaire de droits et des
-                acteurs sociaux.</div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-header" onclick="toggleAccordion(this)">Nos Valeurs<i>▼</i></div>
-              <div class="accordion-content">Pour AREDEE/RS, le respect des droits de l’homme est une valeur
-                fondamentale qui est au centre de ses projets/programmes de développement. En effet, les filles, les
-                femmes et les personnes handicapées sont souvent victimes d’injustices sociales en zones urbaines comme
-                rurales. C’est pourquoi, AREDEE/RS appuie et élabore, sur la base de leurs besoins, des
-                projets/programmes en mettant l’accent sur l’équité, la non-discrimination et la participation active et
-                inclusive..</div>
-
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-header" onclick="toggleAccordion(this)">Nos Spécificités <i>▼</i></div>
-              <div class="accordion-content">L’organisation œuvre particulièrement dans la promotion des droits de
-                l’enfant, la lutte contre la traite des personnes, le monitoring, observation des droits humains et la
-                gouvernance participative..</div>
-            </div>
+              <script>
+                function toggleAccordion(element) {
+                  let parent = element.parentElement;
+                  let allItems = document.querySelectorAll('.accordion-item');
+                  allItems.forEach(item => {
+                    if (item !== parent) {
+                      item.classList.remove('open');
+                    }
+                  });
+                  parent.classList.toggle('open');
+                }
+              </script>
+            </section>
 
 
-            <script>
-              function toggleAccordion(element) {
-                let parent = element.parentElement;
-                let allItems = document.querySelectorAll('.accordion-item');
-                allItems.forEach(item => {
-                  if (item !== parent) {
-                    item.classList.remove('open');
-                  }
-                });
-                parent.classList.toggle('open');
-              }
-            </script>
+
 
 
 
@@ -818,17 +823,29 @@
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
                 href="assets/img/team/DSC01304.JPG"><img src="assets/img/team/DSC01304.JPG" class="img-fluid"
                   alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01235.jpg"><img src="assets/img/team/DSC01235.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01237.jpg"><img src="assets/img/team/DSC01237.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01255.jpg"><img src="assets/img/team/DSC01255.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/team/DSC01268.jpg"><img src="assets/img/team/DSC01268.jpg" class="img-fluid"
+                  alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Gallery Section -->>
+    </section><!-- /Gallery Section -->
 
     </div>
 
-    </div>
+    
 
     </section><!-- /Equipe Section -->
 
@@ -840,78 +857,81 @@
         <h2>contacts</h2>
         <p>contactez-nous</p>
       </div><!-- End Section Title -->
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3256562958904!2d0.2009353736971198!3d10.862816757597026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d54582587cc7d1%3A0x3d810d1682e7b238!2sTogo%20TELECOM!5e0!3m2!1sfr!2stg!4v1741882410948!5m2!1sfr!2stg"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      </div>
+      <br> <br>
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
 
-        <div class="row gy-4">
+      <!-- End Google Maps -->
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Addresse</h3>
-                <p>BP. 159 Dapaong – Togo quartier Kombonlouaga, route CEET</p>
-              </div>
-            </div><!-- End Info Item -->
+      <div class="row">
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Téléphone :</h3>
-                <p>90 08 42 93</p>
-              </div>
-            </div><!-- End Info Item -->
+        <div class="col-lg-4">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Addresse</h3>
+              <p>BP. 159 Dapaong – Togo quartier Kombonlouaga, route CEET</p>
+            </div>
+          </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email :</h3>
-                <p>aredeerstogo@yahoo.fr </p>
-              </div>
-            </div><!-- End Info Item -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Téléphone :</h3>
+              <p>90 08 42 93</p>
+            </div>
+          </div><!-- End Info Item -->
 
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contacts.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Nom" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">En cours</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message à bien été envoyé!</div>
-
-                  <button type="submit">Envoyer message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End contacts Form -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email :</h3>
+              <p>aredeerstogo@yahoo.fr </p>
+            </div>
+          </div><!-- End Info Item -->
 
         </div>
+
+        <div class="col-lg-8">
+          <form action="forms/contacts.php" method="post" class="php-email-form" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Nom" required="">
+              </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="">
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">En cours</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message à bien été envoyé!</div>
+
+                <button type="submit">Envoyer message</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End contacts Form -->
+
+      </div>
 
       </div>
 
@@ -1001,7 +1021,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

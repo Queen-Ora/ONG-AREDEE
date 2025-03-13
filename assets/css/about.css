@@ -3,7 +3,7 @@ body {
   background-color: #f4f4f4;
   padding: 20px;
 }
-.accordion {
+/* .accordion {
   width: 100%;
   max-width: 600px;
   margin: auto;
@@ -11,7 +11,8 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
+  border: 5px solid red;
+} */
 .accordion-item {
   border-bottom: 1px solid #ddd;
 }
