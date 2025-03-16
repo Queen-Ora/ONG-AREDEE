@@ -5,20 +5,22 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Montserrat",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +31,12 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
+  --nav-color: rgba(
+    255,
+    255,
+    255,
+    0.905
+  ); /* The default color of the main navmenu links */
   --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-Documents-background-color: #ffffff; /* Used as the background color for Documents items that appear when hovering over primary navigation items */
@@ -63,7 +70,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family:'Montserrat', sans-serif;   
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -84,10 +91,8 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-
 
 @keyframes php-email-form-loading {
   0% {
@@ -118,8 +123,11 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 3em;
   margin-right: 8px;
+  border-radius: 50%;
+  padding-left: 2px;
+  background-color: white;
 }
 
 .header .logo h1 {
@@ -175,6 +183,10 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: rgba(0, 0, 0, 0);
+  max-height: 90px;
+}
+.starter-page-page > main {
+  margin-top: 90px;
 }
 
 /* Index Page Header on Scroll
@@ -209,7 +221,7 @@ h6 {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -230,7 +242,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -269,11 +281,11 @@ h6 {
 
   .navmenu .Documents ul a:hover,
   .navmenu .Documents ul .active:hover,
-  .navmenu .Documents ul li:hover>a {
+  .navmenu .Documents ul li:hover > a {
     background-color: var(--nav-Documents-hover-color);
   }
 
-  .navmenu .Documents:hover>ul {
+  .navmenu .Documents:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -285,7 +297,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .Documents .Documents:hover>ul {
+  .navmenu .Documents .Documents:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -328,7 +340,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-Documents-color);
     padding: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -385,7 +397,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .Documents>.Documents-active {
+  .navmenu .Documents > .Documents-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -412,7 +424,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -425,11 +437,16 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
+  margin-top: 2em;
 }
 
 .footer .footer-top {
   padding: 50px 0;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
+  background-color: color-mix(
+    in srgb,
+    var(--footer-background-color) 90%,
+    white 10%
+  );
 }
 
 .footer .footer-A propos .logo {
@@ -446,13 +463,13 @@ h6 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family:'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--heading-color);
 }
 
 .footer .footer-A propos p {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer .social-links a {
@@ -520,7 +537,6 @@ h6 {
 
 .footer .footer-contacts p {
   margin-bottom: 5px;
- 
 }
 
 .footer .footer-newsletter .newsletter-form {
@@ -531,7 +547,11 @@ h6 {
   border-radius: 4px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
   display: flex;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 15%);
+  background-color: color-mix(
+    in srgb,
+    var(--footer-background-color) 90%,
+    white 15%
+  );
   transition: 0.3s;
 }
 
@@ -539,19 +559,23 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px;
   width: 100%;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 15%);
+  background-color: color-mix(
+    in srgb,
+    var(--footer-background-color) 90%,
+    white 15%
+  );
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -562,7 +586,7 @@ h6 {
   border-radius: 0 4px 4px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -667,7 +691,8 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -690,11 +715,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title nav ol li+li {
+.page-title nav ol li + li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.page-title nav ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -714,7 +739,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 58px;
@@ -779,7 +803,6 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  
 }
 
 .hero:before {
@@ -799,7 +822,7 @@ section,
   margin: 0;
   font-size: 56px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero h2 span {
@@ -902,7 +925,6 @@ section,
   /* opacity: 0.5; */
   transition: 0.3s;
   /* filter: grayscale(100); */
- 
 }
 
 .clients .swiper-slide img:hover {
@@ -946,7 +968,6 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
- 
 }
 
 .features .features-item h4 {
@@ -1061,7 +1082,7 @@ section,
 }
 
 .call-to-action .cta-btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1126,7 +1147,6 @@ section,
   }
 }
 
-
 /*--------------------------------------------------------------
 # Partenaires Section
 --------------------------------------------------------------*/
@@ -1148,7 +1168,7 @@ section,
   margin-bottom: 5px;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  font-family:  'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Partenaires .Partenaires-filters li:hover,
@@ -1254,7 +1274,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   padding: 15px 0 0 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -1454,10 +1474,8 @@ section,
 # contacts Section
 --------------------------------------------------------------*/
 
-
-.contacts .info-item+.info-item {
+.contacts .info-item + .info-item {
   margin-top: 40px;
-
 }
 
 .contacts .info-item i {
@@ -1491,31 +1509,35 @@ section,
   height: 100%;
 }
 
-.contacts .php-email-form input[type=text],
-.contacts .php-email-form input[type=email],
+.contacts .php-email-form input[type="text"],
+.contacts .php-email-form input[type="email"],
 .contacts .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contacts .php-email-form input[type=text]:focus,
-.contacts .php-email-form input[type=email]:focus,
+.contacts .php-email-form input[type="text"]:focus,
+.contacts .php-email-form input[type="email"]:focus,
 .contacts .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contacts .php-email-form input[type=text]::placeholder,
-.contacts .php-email-form input[type=email]::placeholder,
+.contacts .php-email-form input[type="text"]::placeholder,
+.contacts .php-email-form input[type="email"]::placeholder,
 .contacts .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contacts .php-email-form button[type=submit] {
+.contacts .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1524,7 +1546,7 @@ section,
   border-radius: 4px;
 }
 
-.contacts .php-email-form button[type=submit]:hover {
+.contacts .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1540,14 +1562,20 @@ section,
   position: relative;
 }
 
-.Partenaires-details .Partenaires-details-slider .swiper-pagination .swiper-pagination-bullet {
+.Partenaires-details
+  .Partenaires-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.Partenaires-details .Partenaires-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.Partenaires-details
+  .Partenaires-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
@@ -1562,7 +1590,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .Partenaires-details .Partenaires-info ul {
@@ -1571,7 +1600,7 @@ section,
   font-size: 15px;
 }
 
-.Partenaires-details .Partenaires-info ul li+li {
+.Partenaires-details .Partenaires-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1599,14 +1628,15 @@ section,
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.service-details .service-box + .service-box {
   margin-top: 30px;
 }
 
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1655,7 +1685,8 @@ section,
   align-items: center;
   padding: 10px 0;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .download-catalog a:first-child {
@@ -1722,11 +1753,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }

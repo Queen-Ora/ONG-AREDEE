@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  padding: 20px;
 }
 /* .accordion {
   width: 100%;
@@ -22,12 +21,13 @@ body {
   align-items: center;
   padding: 15px;
   cursor: pointer;
-  background: #007bff;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-weight: bold;
 }
 .accordion-header:hover {
-  background: #0056b3;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--accent-color);
 }
 .accordion-header i {
   transition: transform 0.3s ease;
